@@ -31,7 +31,7 @@ replace `board-hifive1-revb` with `board-hifive1`.
 2. Run the programmer software.
   * HiFive1 Rev B:
 ```sh
-/path/to/JLinkGDBServer -device FE310 -if JTAG -speed 4000 -port 3333
+/path/to/JLinkGDBServer -device FE310 -if JTAG -speed 4000 -port 3333 -nogui
 ```
   * HiFive1:
 ```sh
