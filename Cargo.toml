@@ -1,0 +1,26 @@
+[package]
+name = "max7219-examples"
+version = "0.0.0"
+authors = ["Ales Katona <almindor@gmail.com>"]
+edition = "2018"
+license = "ISC"
+readme = "README.md"
+
+[dependencies]
+embedded-hal = "0.2.3"
+hifive1 = { version = "0.8.1", features = ["board-hifive1-revb"] }
+panic-halt = "0.2.0"
+riscv = "0.5.4"
+riscv-rt = "0.6.1"
+max7219 = "0.2.0"
+
+# this lets you use `cargo fix`!
+[[bin]]
+name = "max7219-examples"
+test = false
+bench = false
+
+[profile.release]
+codegen-units = 1 # better optimizations
+debug = true # symbols are nice and they don't increase the size on Flash
+lto = true # better optimizations
