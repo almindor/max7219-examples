@@ -7,12 +7,12 @@ license = "ISC"
 readme = "README.md"
 
 [dependencies]
-embedded-hal = "0.2.3"
+embedded-hal = "0.2.4"
 hifive1 = { version = "0.8.1", features = ["board-hifive1-revb"] }
 panic-halt = "0.2.0"
-riscv = "0.5.4"
-riscv-rt = "0.6.1"
-max7219 = "0.2.0"
+riscv = "0.6.0"
+riscv-rt = "0.8.0"
+max7219 = "0.3.0"
 
 # this lets you use `cargo fix`!
 [[bin]]
